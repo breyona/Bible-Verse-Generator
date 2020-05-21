@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Bible Verse Project</title>
+</head>
+<body>
+    <h1>RANDOM BIBLE VERSE GENERATOR</h1>
+    <div class="question">   
+    <p class="title">Input your name and see what bible verse is waiting for you!</p>
+    <input id="userinput" placeholder="Name" type="input"/>
+    <input id="button" type="button" value="submit" onclick="response()";/>
+    <p id="response"></p>
+    
+
+</div>
+    <script>
+        function response(){
+            var list = [
+                "Joshua 1:9 ~~ Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the LORD your GOD is with you wherever you go.",
+
+                "Corinthians 10:13 ~~ No temptation has overtaken you except what is common to mankind. And GOD is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it.",
+
+                "Joshua 1:8 ~~ Do not let this Book of the Law depart from your mouth; meditate on it day and night, so that you may be careful to do everything written in it. Then you will be prosperous and successful.",
+
+                "Psalm 31:24 ~~ Be strong, and let your heart take courage, all you who wait for the LORD!",
+
+                "Philippians 4:13 ~~ I can do all things through Christ who strengthens me.",
+
+                "Matthew 6:33 ~~ But seek first his kingdom and his righteousness, and all these things will be given to you as well.",
+
+                "Proverbs 3:5-6 ~~ Trust in the LORD with all your heart and lean not on your own understanding; in all your ways acknowledge him, and he will make your paths straight.",
+
+                "Jeremiah 29:13 ~~ 'You will seek Me and find Me when you search for Me with all your heart.'",
+
+                "Matthew 6:21 ~~ For where your treasure is, there your heart will be also.",
+
+                "Hebrews 13:5 ~~ Keep your lives free from the love of money and be content with what you have, because GOD has said, 'Never will I leave you; never will I forsake you'",
+
+                "Peter 5:6-7 ~~ Humble yourselves, therefore, under GOD's  mighty hand, that he may lift you up in due time. Cast all your anxiety on him because he cares for you.",
+
+                "Luke 10:19 ~~ Behold, I have given you authority to tread on serpents and scorpions,  and over all the power of the enemy, and nothing shall hurt you.",
+
+                "Psalm 32:8 ~~ 'I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.'",
+
+                "Psalm 37:3-4 ~~ Trust in the LORD and do good; dwell in the land and enjoy safe pasture. Take delight in the LORD, and he will give you the desires of your heart!",
+
+                "Psalm 37:7 ~~ Be still before the LORD and wait patiently for him; do not fret when people succeed in their ways, when they carry out their wicked schemes.",
+
+                "Proverbs 4:23 ~~ Above all else, guard your heart, for everything you do flows from it.",
+
+                "Jeremiah 33:3 ~~ 'Call to me and I will answer you and tell you great and unsearchable things you do not know.'",
+
+
+            ];
+            var number = Math.floor(Math.random()*17);
+            document.getElementById("response").innerHTML = list[number];
+            
+        }
+
+    </script>
+    
+</body>
+</html>
